@@ -2,7 +2,7 @@
 #define BALL_HPP
 
 #include "Entity.hpp"
-#include "Core/ParticleEmitter.hpp"
+#include "../Core/ParticleEmitter.hpp"
 
 
 class Ball: public Entity

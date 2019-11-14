@@ -3,7 +3,7 @@
 
 #include <fstream>
 #include "Config.hpp"
-#include "Entities/Brick.hpp"
+#include "../Entities/Brick.hpp"
 
 class LevelManager: public sf::Drawable, public sf::Transformable, sf::NonCopyable
 {

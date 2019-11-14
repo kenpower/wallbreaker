@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{96AB051D-ED61-4DC6-B173-A2ED289CA09E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>E:\SDKS\SFML-2.5.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>E:\SDKS\SFML-2.5.1\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio-s-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>E:\SDKS\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-audio.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\SDKS\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\Effect.cpp" />
+    <ClCompile Include="src\core\Game.cpp" />
+    <ClCompile Include="src\core\HUD.cpp" />
+    <ClCompile Include="src\core\LevelManager.cpp" />
+    <ClCompile Include="src\core\Main.cpp" />
+    <ClCompile Include="src\core\ParticleEmitter.cpp" />
+    <ClCompile Include="src\core\ParticleSystem.cpp" />
+    <ClCompile Include="src\core\Resources.cpp" />
+    <ClCompile Include="src\core\Settings.cpp" />
+    <ClCompile Include="src\core\SoundSystem.cpp" />
+    <ClCompile Include="src\entities\Ball.cpp" />
+    <ClCompile Include="src\entities\Brick.cpp" />
+    <ClCompile Include="src\entities\Context.cpp" />
+    <ClCompile Include="src\entities\Entity.cpp" />
+    <ClCompile Include="src\entities\LaserBeam.cpp" />
+    <ClCompile Include="src\entities\Paddle.cpp" />
+    <ClCompile Include="src\entities\PowerUp.cpp" />
+    <ClCompile Include="src\gui\BitmapFont.cpp" />
+    <ClCompile Include="src\gui\BitmapText.cpp" />
+    <ClCompile Include="src\gui\Button.cpp" />
+    <ClCompile Include="src\gui\CheckBox.cpp" />
+    <ClCompile Include="src\gui\Label.cpp" />
+    <ClCompile Include="src\gui\Layout.cpp" />
+    <ClCompile Include="src\gui\Menu.cpp" />
+    <ClCompile Include="src\gui\Theme.cpp" />
+    <ClCompile Include="src\gui\utils\Arrow.cpp" />
+    <ClCompile Include="src\gui\utils\Cross.cpp" />
+    <ClCompile Include="src\gui\Widget.cpp" />
+    <ClCompile Include="src\states\Editor.cpp" />
+    <ClCompile Include="src\states\MainMenu.cpp" />
+    <ClCompile Include="src\states\OptionsMenu.cpp" />
+    <ClCompile Include="src\states\State.cpp" />
+    <ClCompile Include="src\states\Wallbreaker.cpp" />
+    <ClCompile Include="src\utils\FileSystem.cpp" />
+    <ClCompile Include="src\utils\IniParser.cpp" />
+    <ClCompile Include="src\utils\Math.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\Config.hpp" />
+    <ClInclude Include="src\core\Effect.hpp" />
+    <ClInclude Include="src\core\Game.hpp" />
+    <ClInclude Include="src\core\HUD.hpp" />
+    <ClInclude Include="src\core\LevelManager.hpp" />
+    <ClInclude Include="src\core\ParticleEmitter.hpp" />
+    <ClInclude Include="src\core\ParticleSystem.hpp" />
+    <ClInclude Include="src\core\Resources.hpp" />
+    <ClInclude Include="src\core\Settings.hpp" />
+    <ClInclude Include="src\core\SoundSystem.hpp" />
+    <ClInclude Include="src\entities\Ball.hpp" />
+    <ClInclude Include="src\entities\Brick.hpp" />
+    <ClInclude Include="src\entities\Context.hpp" />
+    <ClInclude Include="src\entities\Entity.hpp" />
+    <ClInclude Include="src\entities\LaserBeam.hpp" />
+    <ClInclude Include="src\entities\Paddle.hpp" />
+    <ClInclude Include="src\entities\PowerUp.hpp" />
+    <ClInclude Include="src\gui\BitmapFont.hpp" />
+    <ClInclude Include="src\gui\BitmapText.hpp" />
+    <ClInclude Include="src\gui\Button.hpp" />
+    <ClInclude Include="src\gui\CheckBox.hpp" />
+    <ClInclude Include="src\gui\Label.hpp" />
+    <ClInclude Include="src\gui\Layout.hpp" />
+    <ClInclude Include="src\gui\Menu.hpp" />
+    <ClInclude Include="src\gui\OptionsBox.hpp" />
+    <ClInclude Include="src\gui\Theme.hpp" />
+    <ClInclude Include="src\gui\utils\Arrow.hpp" />
+    <ClInclude Include="src\gui\utils\Box.hpp" />
+    <ClInclude Include="src\gui\utils\Cross.hpp" />
+    <ClInclude Include="src\gui\Widget.hpp" />
+    <ClInclude Include="src\states\Editor.hpp" />
+    <ClInclude Include="src\states\MainMenu.hpp" />
+    <ClInclude Include="src\states\OptionsMenu.hpp" />
+    <ClInclude Include="src\states\State.hpp" />
+    <ClInclude Include="src\states\Wallbreaker.hpp" />
+    <ClInclude Include="src\utils\FileSystem.hpp" />
+    <ClInclude Include="src\utils\IniParser.hpp" />
+    <ClInclude Include="src\utils\Math.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\gui\OptionsBox.inl" />
+    <None Include="src\gui\utils\Box.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

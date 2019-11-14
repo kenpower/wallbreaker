@@ -1,6 +1,6 @@
 #include "ParticleSystem.hpp"
 #include "ParticleEmitter.hpp"
-#include "Utils/Math.hpp"
+#include "../Utils/Math.hpp"
 
 
 ParticleSystem::ParticleSystem():

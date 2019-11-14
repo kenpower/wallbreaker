@@ -1,8 +1,8 @@
 #ifndef HUD_HPP
 #define HUD_HPP
 
-#include "Core/Config.hpp"
-#include "Gui/BitmapText.hpp"
+#include "../Core/Config.hpp"
+#include "../Gui/BitmapText.hpp"
 #include <SFML/Graphics.hpp>
 
 /**

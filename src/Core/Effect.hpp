@@ -116,7 +116,7 @@ private:
         sf::Clock created_at;
     };
 
-    static void pushObject(Object::Data& data, Type type, sf::Sprite& target, float duration);
+    static void pushObject(Object::Data data, Type type, sf::Sprite& target, float duration);
 
     typedef std::list<Object> ObjectList;
 

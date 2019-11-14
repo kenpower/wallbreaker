@@ -3,11 +3,11 @@
 #include "Paddle.hpp"
 #include "LaserBeam.hpp"
 #include "Ball.hpp"
-#include "Entities/Context.hpp"
-#include "Core/SoundSystem.hpp"
-#include "Core/Resources.hpp"
-#include "States/Wallbreaker.hpp"
-#include "Utils/Math.hpp"
+#include "../Entities/Context.hpp"
+#include "../Core/SoundSystem.hpp"
+#include "../Core/Resources.hpp"
+#include "../States/Wallbreaker.hpp"
+#include "../Utils/Math.hpp"
 
 // Paddle speed when moved with arrow keys
 #define PADDLE_SPEED 150

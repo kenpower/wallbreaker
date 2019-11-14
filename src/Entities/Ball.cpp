@@ -2,10 +2,10 @@
 #include "Brick.hpp"
 #include "Paddle.hpp"
 #include "Context.hpp"
-#include "Core/Effect.hpp"
-#include "Core/Resources.hpp"
-#include "Core/SoundSystem.hpp"
-#include "Utils/Math.hpp"
+#include "../Core/Effect.hpp"
+#include "../Core/Resources.hpp"
+#include "../Core/SoundSystem.hpp"
+#include "../Utils/Math.hpp"
 
 // When hitting the pad, the ball bounces from PADDLE_ANGLE to 90 + PADDLE_ANGLE
 #define PADDLE_ANGLE           30 // degrees

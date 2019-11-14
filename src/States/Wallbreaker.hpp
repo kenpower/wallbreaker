@@ -2,13 +2,13 @@
 #define WALLBREAKER_HPP
 
 #include "State.hpp"
-#include "Core/Config.hpp"
-#include "Core/HUD.hpp"
-#include "Core/ParticleSystem.hpp"
-#include "Entities/Paddle.hpp"
-#include "Entities/Ball.hpp"
-#include "Gui/BitmapText.hpp"
-#include "Gui/Menu.hpp"
+#include "../Core/Config.hpp"
+#include "../Core/HUD.hpp"
+#include "../Core/ParticleSystem.hpp"
+#include "../Entities/Paddle.hpp"
+#include "../Entities/Ball.hpp"
+#include "../Gui/BitmapText.hpp"
+#include "../Gui/Menu.hpp"
 
 #include <list>
 

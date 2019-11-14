@@ -1,6 +1,6 @@
 #include "LaserBeam.hpp"
 #include "Brick.hpp"
-#include "Core/Resources.hpp"
+#include "../Core/Resources.hpp"
 
 
 LaserBeam::LaserBeam()

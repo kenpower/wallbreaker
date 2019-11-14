@@ -1,10 +1,10 @@
 #include "OptionsMenu.hpp"
-#include "Core/Config.hpp"
-#include "Core/Game.hpp"
-#include "Core/SoundSystem.hpp"
-#include "Core/Resources.hpp"
-#include "Gui/Button.hpp"
-#include "Gui/Label.hpp"
+#include "../Core/Config.hpp"
+#include "../Core/Game.hpp"
+#include "../Core/SoundSystem.hpp"
+#include "../Core/Resources.hpp"
+#include "../Gui/Button.hpp"
+#include "../Gui/Label.hpp"
 
 
 OptionsMenu::OptionsMenu():

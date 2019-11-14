@@ -2,10 +2,10 @@
 #define OPTIONSMENU_HPP
 
 #include "State.hpp"
-#include "Gui/Menu.hpp"
-#include "Gui/OptionsBox.hpp"
-#include "Gui/Button.hpp"
-#include "Gui/CheckBox.hpp"
+#include "../Gui/Menu.hpp"
+#include "../Gui/OptionsBox.hpp"
+#include "../Gui/Button.hpp"
+#include "../Gui/CheckBox.hpp"
 
 /**
  * Menu dedicated to settings management

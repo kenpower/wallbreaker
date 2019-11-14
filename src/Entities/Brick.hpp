@@ -1,7 +1,7 @@
 #ifndef BRICK_HPP
 #define BRICK_HPP
 
-#include "Core/ParticleEmitter.hpp"
+#include "../Core/ParticleEmitter.hpp"
 #include <SFML/Graphics/Sprite.hpp>
 
 class Brick: public sf::Sprite

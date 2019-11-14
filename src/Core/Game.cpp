@@ -4,10 +4,10 @@
 #include "LevelManager.hpp"
 #include "Settings.hpp"
 #include "SoundSystem.hpp"
-#include "States/State.hpp"
-#include "Gui/Theme.hpp"
-#include "Utils/IniParser.hpp"
-#include "Utils/FileSystem.hpp"
+#include "../States/State.hpp"
+#include "../Gui/Theme.hpp"
+#include "../Utils/IniParser.hpp"
+#include "../Utils/FileSystem.hpp"
 #include <iostream>
 
 

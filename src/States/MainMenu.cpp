@@ -1,8 +1,8 @@
 #include "MainMenu.hpp"
-#include "Core/Game.hpp"
-#include "Core/Resources.hpp"
-#include "Core/Config.hpp"
-#include "Gui/Theme.hpp"
+#include "../Core/Game.hpp"
+#include "../Core/Resources.hpp"
+#include "../Core/Config.hpp"
+#include "../Gui/Theme.hpp"
 
 #define ABOUT_TEXT (APP_TITLE " " APP_VERSION " - " APP_URL " (Built " __DATE__ ", " __TIME__ ")")
 

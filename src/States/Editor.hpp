@@ -2,10 +2,10 @@
 #define EDITOR_HPP
 
 #include "State.hpp"
-#include "Core/Config.hpp"
-#include "Core/LevelManager.hpp"
-#include "Entities/Brick.hpp"
-#include "Gui/Menu.hpp"
+#include "../Core/Config.hpp"
+#include "../Core/LevelManager.hpp"
+#include "../Entities/Brick.hpp"
+#include "../Gui/Menu.hpp"
 
 namespace gui
 {

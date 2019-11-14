@@ -1,8 +1,8 @@
 #include "Game.hpp"
-#include "States/Editor.hpp"
-#include "States/MainMenu.hpp"
-#include "States/OptionsMenu.hpp"
-#include "States/Wallbreaker.hpp"
+#include "../States/Editor.hpp"
+#include "../States/MainMenu.hpp"
+#include "../States/OptionsMenu.hpp"
+#include "../States/Wallbreaker.hpp"
 
 
 int main(int /*argc*/, char* argv[])

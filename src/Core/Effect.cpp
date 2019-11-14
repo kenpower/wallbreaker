@@ -177,7 +177,7 @@ void Effect::stopAll()
 }
 
 
-void Effect::pushObject(Object::Data& data, Type type, sf::Sprite& target, float duration)
+void Effect::pushObject(Object::Data data, Type type, sf::Sprite& target, float duration)
 {
     m_objects.push_back(Object(data, type, target, duration));
 }

@@ -1,7 +1,7 @@
 #include "HUD.hpp"
-#include "Core/Effect.hpp"
-#include "Core/Resources.hpp"
-#include "Gui/Theme.hpp"
+#include "../Core/Effect.hpp"
+#include "../Core/Resources.hpp"
+#include "../Gui/Theme.hpp"
 
 
 HUD::HUD():
