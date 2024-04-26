@@ -33,8 +33,9 @@ Game::~Game()
 void Game::init(const std::string& path)
 {
     // Set application directory: compute dirname from path
-    m_appDir = filesystem::dirname(path);
-
+    //m_appDir = filesystem::dirname(path);
+    
+    m_appDir = path+"/";
     // Init resources search directory
     Resources::setSearchPath(m_appDir + "/resources/");
 
